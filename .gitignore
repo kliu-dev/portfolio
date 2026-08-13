@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build
+build/
+dist/
+wheels/
+*.egg-info
+
+# MacOS files
+.DS_Store

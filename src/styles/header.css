@@ -58,10 +58,6 @@ p {
     -ms-user-select: none;
 }
 
-#email {
-    font-weight: bold;
-}
-
 .color {
     color: var(--font-color);
 }
@@ -80,6 +76,7 @@ p {
     font-size: 20px;
     text-align: center;
     margin-left: 25px;
+    font-weight: normal;
 }
 
 .button-text {

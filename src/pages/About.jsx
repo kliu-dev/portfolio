@@ -30,7 +30,7 @@ const About = forwardRef(function About({ onViewProjects }, ref) {
                         Resume available upon request.
                         <br />
                         <br />
-                        <div id="email"><u>Email</u>: kayliu.dev [at] <br></br>gmail (dot) com</div>
+                        <div id="email"><u>Email</u>: kayleeliu [at] <br></br>uchicago (dot) edu</div>
                     </div>
                 </div>
                 <div id="links-container">
@@ -47,21 +47,6 @@ const About = forwardRef(function About({ onViewProjects }, ref) {
                         rel="noreferrer"
                         className="socials-box"
                         id="linkedin"
-                    ></a>
-                    <a
-                        href="https://www.facebook.com"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="socials-box"
-                        id="facebook"
-                    ></a>
-                    {/* ^ change to link to facebook when i figure my login lololol */}
-                    <a
-                        href="https://www.instagram.com/kaylee.liu_/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="socials-box"
-                        id="insta"
                     ></a>
                 </div>
             </div>

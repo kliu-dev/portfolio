@@ -25,6 +25,10 @@ justify-content: flex-start;
     grid-template-columns: repeat(3, 375px);
     justify-content: center;
     gap: 25px;
+
+    font-family: monospace;
+    font-size: 16px;
+    color: var(--outline-color);
 }
 
 .project-box {
@@ -57,6 +61,37 @@ justify-content: flex-start;
     border-bottom: var(--border-weight) solid var(--outline-color);
 
     z-index: 2;
+}
+
+.proj-image {
+    background: var(--project-image);
+    background-size: cover;
+    background-position: center;
+
+    height: 200px;
+
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: rgba(255, 0, 0, 0.48);
+
+    z-index: 5;
+}
+
+.proj-descp {
+    font-family: monospace;
+    font-size: 16px;
+    color: var(--outline-color);
+
+    /* background-color: rgba(0, 0, 255, 0.366); */
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 295px;
+
+    z-index: 20;
 }
 
 .window-parent {

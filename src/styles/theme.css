@@ -19,8 +19,6 @@
         --star-img: url('../assets/star-light.png');
         --github-img: url('../assets/github-light.png');
         --linkedin-img: url('../assets/linkedin-light.png');
-        --facebook-img: url('../assets/facebook-light.png');
-        --insta-img: url('../assets/insta-light.png');
 
         --button-color: #f6c7db;
         /* --font-sans-serif: "Roboto", sans-serif; */
@@ -42,6 +40,9 @@
         --tri-img: url('../assets/triangle-img-dark.png');
         --glimmer-img: url('../assets/glimmer-dark.png');
         --star-img: url('../assets/star-dark.png');
+
+        --github-img: url('../assets/github-dark.png');
+        --linkedin-img: url('../assets/linkedin-dark.png');
 
         --header-outline: white;
         --overscroll: #222644;

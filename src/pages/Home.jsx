@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import { forwardRef } from 'react';
 
 const Home = forwardRef(function Home({ onStart }, ref) {
     return (
@@ -18,9 +18,9 @@ const Home = forwardRef(function Home({ onStart }, ref) {
                         <span className="small-word">Developer|Illustrator|Student</span>
                     </h1>
                 </div>
-                <button type="button" id="start-button" onClick={onStart}>
-                    <div id="start-tri"></div>
-                    <div id="start-text">
+                <button type="button" className="start-button" onClick={onStart}>
+                    <div className="start-tri"></div>
+                    <div className="start-text">
                         <span className="button-text">START</span>
                     </div>
                 </button>

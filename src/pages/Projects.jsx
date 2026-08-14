@@ -1,47 +1,49 @@
-import { forwardRef } from 'react'
 import ProjectBox from '../components/ProjectBox.jsx'
+import { forwardRef } from 'react';
 
-import computerImg from "../assets/computer-img-light.png";
-
-const SKILLS = ['C++', 'Python', 'JavaScript', 'HTML/CSS', 'Java']
-const TOOLS = ['Photoshop', 'Illustrator', 'InDesign', 'Canva']
+import misinfo from "../assets/proj_images/misinformation.png";
+import hashtags from "../assets/proj_images/hashtags.png";
 
 const PROJECTS = [
     {
-        id: 1, title: 'Misinformation and AI',
-        image: computerImg,
+        id: 1,
+        title: 'Misinformation and AI',
+        image: misinfo,
         descp: 'hey temp descp heyheyheyhey',
-        github: 'https://github.com/kliu-dev/misinformation-and-ai'
+        github: 'https://github.com/kliu-dev/misinformation-and-ai',
+        height: '200px'
     },
     {
         id: 2,
         title: 'Hashtags for Change',
-        image: computerImg,
+        image: hashtags,
         descp: 'temp',
-        github: 'https://github.com/kliu-dev/hashtags-for-change'
+        github: 'https://github.com/kliu-dev/hashtags-for-change',
+        height: '200px'
     },
     {
         id: 3,
         title: 'Trade Analysis: Compressors',
-        image: computerImg,
+        image: misinfo,
         descp: 'temp',
-        github: 'https://github.com/kliu-dev/trade-air-compressors'
+        github: 'https://github.com/kliu-dev/trade-air-compressors',
+        height: '200px'
     },
     {
         id: 4,
-        title:
-            'Project 4',
-        image: computerImg,
+        title: 'Portfolio',
+        image: misinfo,
         descp: 'temp',
-        github: 'temp'
+        github: 'https://github.com/kliu-dev/portfolio',
+        height: '200px'
     },
     {
         id: 5,
-        title:
-            'Project 5',
-        image: computerImg,
+        title: 'Python Chess GUI',
+        image: misinfo,
         descp: 'temp',
-        github: 'temp'
+        github: 'https://github.com/kliu-dev/py-chess',
+        height: '200px'
     }
 ]
 
@@ -50,7 +52,8 @@ const Projects = forwardRef(function Projects(_props, ref) {
         <section id="projects" data-section="projects" ref={ref} className="proj-container">
             {PROJECTS.map((project) => (
                 <ProjectBox key={project.id} title={project.title}
-                    image={project.image} descp={project.descp} github={project.github} />
+                    image={project.image} descp={project.descp}
+                    height={project.height} github={project.github} />
             ))
             }
         </section>

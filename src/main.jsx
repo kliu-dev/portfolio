@@ -8,6 +8,7 @@ import './styles/about.css'
 import './styles/header.css'
 import './styles/index.css'
 import './styles/projects.css'
+import './styles/skills.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

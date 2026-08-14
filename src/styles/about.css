@@ -3,7 +3,7 @@
 /* ABOUT & CONTACT SECTION */
 
 #about {
-    padding-bottom: 100px;
+    padding-bottom: 250px;
 }
 
 #about-box {
@@ -97,9 +97,9 @@
     width: 275px;
     height: 300px;
 
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 30px;
+    /* left: 50%;
+    transform: translateX(-50%); */
 
     /* text-align: left; */
 }
@@ -142,12 +142,32 @@
     background-size: contain;
 }
 
-#facebook {
-    background: var(--facebook-img) center/cover no-repeat;
-    background-size: contain;
+.proj-button {
+    position: absolute;
+    width: 225px;
+    height: 45px;
+    background-color: var(--button-color);
+    border: var(--border-weight) solid var(--outline-color);
+    border-radius: calc(var(--border-rad)/2);
+
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-#insta {
-    background: var(--insta-img) center/cover no-repeat;
+.proj-tri {
+    width: 30px;
+    height: 30px;
+    background: var(--tri-img);
     background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    /* background-color: red; */
 }

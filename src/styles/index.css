@@ -91,7 +91,7 @@
     transform: translateX(-50%);
 }
 
-#computer #start-button {
+#computer .start-button {
     position: absolute;
     width: 160px;
     height: 45px;
@@ -110,16 +110,17 @@
     gap: 8px;
 }
 
-#start-button #start-tri {
+.start-button .start-tri {
     width: 30px;
     height: 30px;
     background: var(--tri-img);
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 5px;
+    /* background-color: red; */
 }
 
-#start-button #start-text {
+.start-button .start-text {
     width: 100px;
     height: 40px;
     margin-top: -10px;

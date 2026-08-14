@@ -1,4 +1,4 @@
-export default function ProjectBox({ title, image, descp, github }) {
+export default function ProjectBox({ title, image, descp, github, height }) {
     console.log(image)
     return (
         <div className="project-box">
@@ -13,7 +13,10 @@ export default function ProjectBox({ title, image, descp, github }) {
 
             <div
                 className="proj-image"
-                style={{ backgroundImage: `url("${image}")` }}>
+                style={{
+                    "--image-url": `url("${image}")`,
+                    "--project-height": height
+                }}>
             </div>
             <div className="proj-descp">{descp}</div>
         </div >
@@ -21,4 +24,5 @@ export default function ProjectBox({ title, image, descp, github }) {
 }
 
 // style={{ "--project-image": `url(${image})` }}>
+// style={{ backgroundImage: `url("${image}")` }}>
 

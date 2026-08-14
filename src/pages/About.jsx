@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import { forwardRef } from 'react';
 
 const About = forwardRef(function About({ onViewProjects }, ref) {
     return (
@@ -13,8 +13,18 @@ const About = forwardRef(function About({ onViewProjects }, ref) {
                     yap yap yap
                 </div>
 
-                <button type="button" id="projects-button" onClick={onViewProjects}>
-                    <span className="button-text">PROJECTS</span>
+                {/* <button type="button" id="start-button" onClick={onViewProjects}>
+                    <div className="start-tri"></div>
+                    <div className="start-text">
+                        <span className="button-text">PROJECTS</span>
+                    </div>
+                </button> */}
+
+                <button type="button" className="proj-button" onClick={onViewProjects}>
+                    <div className="proj-tri"></div>
+                    <div className="start-text">
+                        <span className="button-text">PROJECTS</span>
+                    </div>
                 </button>
             </div>
 
@@ -27,7 +37,7 @@ const About = forwardRef(function About({ onViewProjects }, ref) {
                     <div className="window-text">
                         The best way to contact me is through email! Feel free to reach out.
                         <br /><br />
-                        Resume available upon request.
+                        My resume is available upon request.
                         <br />
                         <br />
                         <div id="email"><u>Email</u>: kayleeliu [at] <br></br>uchicago (dot) edu</div>

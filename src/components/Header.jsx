@@ -1,8 +1,8 @@
-const SECTIONS = { home: 1, about: 2, projects: 3 }
+const SECTIONS = { home: 1, about: 2, skills: 3, projects: 4 }
 
 export default function Header({ activeSection, darkMode, onToggleDarkMode, onNavigate }) {
     const stage = SECTIONS[activeSection] ?? 1
-    const isComplete = stage === 3
+    const isComplete = stage === 4
 
     return (
         <div className="header">
@@ -13,6 +13,13 @@ export default function Header({ activeSection, darkMode, onToggleDarkMode, onNa
                     onClick={() => onNavigate('about')}
                 >
                     About
+                </button>
+                <button
+                    type="button"
+                    className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}
+                    onClick={() => onNavigate('skills')}
+                >
+                    Skills
                 </button>
                 <button
                     type="button"
@@ -27,6 +34,7 @@ export default function Header({ activeSection, darkMode, onToggleDarkMode, onNa
                 <div className="bar-part part1"></div>
                 <div className="bar-part part2"></div>
                 <div className="bar-part part3"></div>
+                <div className="bar-part part4"></div>
                 {isComplete ? (
                     <span className="bar-text">COMPLETE!</span>
                 ) : (

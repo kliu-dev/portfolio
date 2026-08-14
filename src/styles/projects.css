@@ -1,0 +1,102 @@
+@import './theme.css';
+
+/* PROJECTS SECTION */
+#projects {
+    padding-top: 150px;
+    padding-bottom: 250px;
+}
+
+/* .proj-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* justify-content: space-evenly; */
+/* align-content: flex-start; */
+/* space-between: */
+/* 
+column-gap: 25px;
+row-gap: 25px;
+
+justify-content: flex-start;
+} */
+
+.proj-container {
+    display: grid;
+    grid-template-columns: repeat(3, 375px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.project-box {
+    position: relative;
+
+    height: 550px;
+    /* background-color: rgb(212, 118, 118); */
+
+    border: var(--border-weight) solid var(--outline-color);
+    border-radius: var(--border-rad);
+
+    overflow: hidden;
+
+    background-color: var(--window-color);
+
+    z-index: 1;
+}
+
+.project-box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    background-color: var(--window-top);
+
+    pointer-events: none;
+
+    border-bottom: var(--border-weight) solid var(--outline-color);
+
+    z-index: 2;
+}
+
+.window-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    font-family: monospace;
+    font-size: 16px;
+    color: var(--outline-color);
+}
+
+.window-text {
+    font-family: monospace;
+    font-size: 16px;
+    color: var(--outline-color);
+
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.proj-title {
+    z-index: 5;
+}
+
+.proj-github {
+
+    transition: opacity 0.25s ease;
+
+    z-index: 5;
+}
+
+.proj-github a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.proj-github:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

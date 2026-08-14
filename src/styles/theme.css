@@ -1,0 +1,52 @@
+@layer theme {
+    :root {
+        --outline-color: #262626;
+        --border-rad: 0px;
+        --border-weight: 1.5px;
+        --font-color: red;
+        --background-color1: #FAF2DE;
+        --background-color2: #E4F7F9;
+        --loading-color: #e9aad5;
+        --window-color: white;
+        --window-border-color: gray;
+        --window-top-color: purple;
+
+        --computer-img: url('../assets/computer-img-light.png');
+        --tri-img: url('../assets/triangle-img-light.png');
+        --planet-1-img: url('../assets/planet-1-light.png');
+        --planet-2-img: url('../assets/planet-2-light.png');
+        --glimmer-img: url('../assets/glimmer-light.png');
+        --star-img: url('../assets/star-light.png');
+        --github-img: url('../assets/github-light.png');
+        --linkedin-img: url('../assets/linkedin-light.png');
+        --facebook-img: url('../assets/facebook-light.png');
+        --insta-img: url('../assets/insta-light.png');
+
+        --button-color: #f6c7db;
+        /* --font-sans-serif: "Roboto", sans-serif; */
+
+        --header-outline: #2c0d66;
+        --overscroll: #eef4ec;
+
+        --window-color: #dff0f2;
+        --window-top: rgb(181, 220, 224);
+    }
+
+    .dark {
+        --outline-color: white;
+        --background-color1: #383764;
+        --background-color2: #121a2c;
+        --loading-color: #bed9f4;
+        --button-color: #11375a;
+        --computer-img: url('../assets/computer-img-dark.png');
+        --tri-img: url('../assets/triangle-img-dark.png');
+        --glimmer-img: url('../assets/glimmer-dark.png');
+        --star-img: url('../assets/star-dark.png');
+
+        --header-outline: white;
+        --overscroll: #222644;
+
+        --window-color: rgb(24, 24, 52);
+        --window-top: rgb(20, 20, 35);
+    }
+}

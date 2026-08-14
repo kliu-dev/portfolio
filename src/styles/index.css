@@ -1,0 +1,126 @@
+@import './theme.css';
+/* HOME SECTION */
+
+#planet-1 {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+
+    background: var(--planet-1-img) center/cover no-repeat;
+    background-size: contain;
+
+    transform: translate(-250px, 58px);
+    z-index: 15;
+}
+
+#planet-2 {
+    position: absolute;
+    width: 275px;
+    height: 175px;
+
+    background: var(--planet-2-img) center/cover no-repeat;
+    background-size: contain;
+
+    transform: translate(240px, -120px);
+    z-index: 15;
+}
+
+#star-1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    background: var(--star-img) center/cover no-repeat;
+    background-size: contain;
+
+    transform: translate(120px, -140px);
+    z-index: 15;
+}
+
+#star-2 {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+
+    background: var(--glimmer-img) center/cover no-repeat;
+    background-size: contain;
+
+    transform: translate(320px, -210px);
+    z-index: 15;
+}
+
+#star-3 {
+    position: absolute;
+    width: 50px;
+    height: 90px;
+
+    background: var(--glimmer-img) center/cover no-repeat;
+    background-size: contain;
+
+    transform: translate(325px, -5px);
+    z-index: 15;
+}
+
+#star-4 {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+
+    background: var(--glimmer-img) center/cover no-repeat;
+    background-size: contain;
+
+    transform: translate(-320px, -50px);
+    z-index: 15;
+}
+
+#computer {
+    position: relative;
+    width: 575px;
+    height: 470px;
+    background: var(--computer-img) center/cover no-repeat;
+    background-size: contain;
+}
+
+#computer #intro-text {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#computer #start-button {
+    position: absolute;
+    width: 160px;
+    height: 45px;
+    background-color: var(--button-color);
+    border: var(--border-weight) solid var(--outline-color);
+    border-radius: calc(var(--border-rad)/2);
+
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#start-button #start-tri {
+    width: 30px;
+    height: 30px;
+    background: var(--tri-img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+#start-button #start-text {
+    width: 100px;
+    height: 40px;
+    margin-top: -10px;
+}

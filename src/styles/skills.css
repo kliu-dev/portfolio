@@ -7,9 +7,6 @@
     width: 500px;
     height: 125px;
 
-    left: 50%;
-    transform: translateX(-50%);
-
     border: var(--border-weight) solid var(--outline-color);
     border-radius: var(--border-rad);
 

@@ -1,6 +1,10 @@
 @import './theme.css';
 /* HOME SECTION */
 
+#home {
+    padding-top: 200px;
+}
+
 #planet-1 {
     position: absolute;
     width: 175px;

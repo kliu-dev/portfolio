@@ -28,6 +28,8 @@
 
         --window-color: #dff0f2;
         --window-top: rgb(181, 220, 224);
+
+        --light-mode: url('../assets/light-icon.png');
     }
 
     .dark {
@@ -49,5 +51,7 @@
 
         --window-color: rgb(24, 24, 52);
         --window-top: rgb(20, 20, 35);
+
+        --light-mode: url('../assets/dark-icon.png');
     }
 }

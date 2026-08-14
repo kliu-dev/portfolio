@@ -15,14 +15,11 @@ body {
     -ms-user-select: none;
 }
 
+
 body {
     background: linear-gradient(to right top, var(--background-color1), var(--background-color2));
 }
 
-
-/* Buttons used for interactive elements (start, projects, mode toggle) should
-   look exactly like the plain divs they replaced — reset browser defaults,
-   the id-specific rules below take it from there. */
 button {
     all: unset;
     cursor: pointer;
@@ -95,11 +92,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     box-sizing: border-box;
-    padding-top: 110px;
+    /* padding-top: 110px; */
+    /* scroll-margin-top: 110px; */
 
     gap: 20px;
+
 }
 
 .container.about,
@@ -212,23 +211,15 @@ p {
 /* 2) light/dark mode icon */
 .mode-icon {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 40px;
+    height: 40px;
 
-    top: 25px;
+    background: var(--light-mode);
+    background-size: cover;
+    background-position: center;
+
+    top: 15px;
     left: 25px;
-}
-
-/* 3) sound icon and nav bar */
-.sound-icon {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-
-    top: 25px;
-    left: 90px;
 }
 
 .header-nav {

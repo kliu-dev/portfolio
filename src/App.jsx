@@ -1,11 +1,14 @@
 import React from 'react'
 import Header from './components/Header.jsx'
+
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Skills from './pages/Skills.jsx'
 import Projects from './pages/Projects.jsx'
+
 import { useDarkMode } from './hooks/useDarkMode.js'
 import { useActiveSection } from './hooks/useActiveSection.js'
+import { useLoadingBar } from './hooks/useLoadingBar.js'
 
 const SECTIONS = ['home', 'about', 'skills', 'projects']
 
@@ -13,9 +16,11 @@ export default function App() {
     const [darkMode, toggleDarkMode] = useDarkMode()
     const { activeSection, sectionRefs, scrollToSection } = useActiveSection(SECTIONS)
 
+    const progress = useLoadingBar(sectionRefs.home, sectionRefs.projects)
+
     return (
         <>
-            <Header activeSection={activeSection} darkMode={darkMode}
+            <Header activeSection={activeSection} darkMode={darkMode} progress={progress}
                 onToggleDarkMode={toggleDarkMode} onNavigate={scrollToSection} />
 
             <main>

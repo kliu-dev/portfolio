@@ -22,7 +22,3 @@ export default function ProjectBox({ title, image, descp, github, height }) {
         </div >
     )
 }
-
-// style={{ "--project-image": `url(${image})` }}>
-// style={{ backgroundImage: `url("${image}")` }}>
-

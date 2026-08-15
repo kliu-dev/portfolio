@@ -150,54 +150,11 @@ p {
     overflow: visible;
 }
 
-.bar-part {
-    flex: 1;
+.loading-bar-fill {
     height: 100%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.part1 {
     background-color: var(--loading-color);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.part2 {
-    background-color: var(--loading-color);
-}
-
-.part3 {
-    background-color: var(--loading-color);
-}
-
-.part4 {
-    background-color: var(--loading-color);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-/* fill based on which section is currently in view */
-.loading-bar.stage-1 .part1 {
-    opacity: 1;
-}
-
-.loading-bar.stage-2 .part1,
-.loading-bar.stage-2 .part2 {
-    opacity: 1;
-}
-
-.loading-bar.stage-3 .part1,
-.loading-bar.stage-3 .part2,
-.loading-bar.stage-3 .part3 {
-    opacity: 1;
-}
-
-.loading-bar.stage-4 .part1,
-.loading-bar.stage-4 .part2,
-.loading-bar.stage-4 .part3,
-.loading-bar.stage-4 .part4 {
-    opacity: 1;
+    border-radius: 5px;
+    transition: width 0.1s linear;
 }
 
 .bar-text {

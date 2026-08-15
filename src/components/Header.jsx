@@ -1,6 +1,6 @@
 const SECTIONS = { home: 1, about: 2, skills: 3, projects: 4 }
 
-export default function Header({ activeSection, darkMode, onToggleDarkMode, onNavigate }) {
+export default function Header({ activeSection, darkMode, onToggleDarkMode, onNavigate, progress }) {
     const stage = SECTIONS[activeSection] ?? 1
     const isComplete = stage === 4
 
@@ -30,11 +30,8 @@ export default function Header({ activeSection, darkMode, onToggleDarkMode, onNa
                 </button>
             </nav>
 
-            <div className={`loading-bar stage-${stage}`}>
-                <div className="bar-part part1"></div>
-                <div className="bar-part part2"></div>
-                <div className="bar-part part3"></div>
-                <div className="bar-part part4"></div>
+            <div className="loading-bar">
+                <div className="loading-bar-fill" style={{ width: `${progress * 100}%` }}></div>
                 {isComplete ? (
                     <span className="bar-text">COMPLETE!</span>
                 ) : (

@@ -10,15 +10,28 @@ const About = forwardRef(function About({ onViewProjects }, ref) {
                 </div>
 
                 <div className="window-text">
-                    yap yap yap
-                </div>
+                    My name is Kaylee Liu, and I'm a 2nd year <b>Computer Science and
+                        Applied Math</b> major at the <b>University of Chicago</b> interested
+                    in exploring where art, storytelling, and technology intersect.
 
-                {/* <button type="button" id="start-button" onClick={onViewProjects}>
-                    <div className="start-tri"></div>
-                    <div className="start-text">
-                        <span className="button-text">PROJECTS</span>
-                    </div>
-                </button> */}
+                    <br />
+                    <br />
+
+                    With a background rich in arts and journalism, I've learned
+                    to view problems from a big-picture lens, asking not
+                    just what something does, but who it affects. I aim to apply
+                    the same rigor to technology, during a time when it's easier
+                    than ever to ship a project without fully understanding
+                    what you've built and why you've built it.
+
+                    <br />
+                    <br />
+
+                    The same passion for understanding "why" drew me to mathematics
+                    and computer science. In my studies and work, I'm eager to
+                    learn more about system infrastructure and the nuances
+                    behind building and securing AI.
+                </div>
 
                 <button type="button" className="proj-button" onClick={onViewProjects}>
                     <div className="proj-tri"></div>

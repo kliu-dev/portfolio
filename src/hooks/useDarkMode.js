@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 
-// Reads the saved theme on mount, then keeps <body> and localStorage in
-// sync whenever it changes. Returns [darkMode, toggleDarkMode].
 export function useDarkMode() {
     const [darkMode, setDarkMode] = useState(false)
 

@@ -34,7 +34,7 @@ const PROJECTS = [
             in São Paulo, Brazil. Collected, cleaned, and analyzed ComexStat trade data using
             Pandas to evaluate Brazil-China trade flows. Evaluated details
             including top importers, exporters, and price per unit calculated using
-            US $FOB and quantity data. Directly compared China with Solvakia.
+            US $FOB and quantity data. Directly compared China with Slovakia.
             Delivered polished report with visualizations and analysis.
             <br />
             <br />
